@@ -5,5 +5,9 @@ const homeController = require('../controllers/home.controllers')
 console.log('router loaded');
 
 router.get('/', homeController.home);
-
+// as we want this file to be controller of all the other routes so we do -
+//whenever use router is /users we call our neighbour ./users
+router.use('/users', require('./users'));
+//for any further routes type router.use(routername, require('./routerfile'));
+router.use('/users', require('./posts'));
 module.exports = router;
