@@ -27,5 +27,9 @@
   },
   "devDependencies": {
     "node-sass": "^7.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himank17/Codeial"
+}
 }
