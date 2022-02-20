@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/header.css">
+    </head>
+    <body>
+        <header>
+            Page Header
+            <ul>
+                <%if(locals.user){%>
+                    <l1><%user.name%></l1>
+                    <l1><a href="/users/sign-out">Sign-Out</a></l1>   
+                <%}else{%>
+                    <l1><a href="users/sign-in">Sign-In</a></l1>
+                    <li><a href="users/sign-up">Sign-Up</a></li>
+                <%}%>
+            </ul>
+        </header>
+    </body>
+</html>

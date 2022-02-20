@@ -9,5 +9,5 @@ router.get('/', homeController.home);
 //whenever use router is /users we call our neighbour ./users
 router.use('/users', require('./users'));
 //for any further routes type router.use(routername, require('./routerfile'));
-router.use('/users', require('./posts'));
+router.use('/posts', require('./posts'));
 module.exports = router;
